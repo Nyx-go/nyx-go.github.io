@@ -106,35 +106,61 @@
                     <label for="type">Type de projets</label>
                     <select id="type">
                         <option value="Tous" selected>Tous</option>
-                        <option value="Scolaires">Scolaires</option>
-                        <option value="Extrascolaires">Extra-scolaires</option>
+                        <option value="pScolaire">Scolaires</option>
+                        <option value="pExtrascolaire">Extra-scolaires</option>
                     </select>
                 </fieldset>
 
                 <fieldset>
                     <legend>Compétences</legend>
-                    <input type="checkbox" id="Java" checked>
-                    <label for="Java">Java</label>
-                    <input type="checkbox" id="HTML-CSS" checked>
-                    <label for="HTML-CSS">HTML-CSS</label>
-                    <input type="checkbox" id="Git" checked>
-                    <label for="Git">Git</label>
-                    <input type="checkbox" id="SQL" checked>
-                    <label for="SQL">SQL</label>
-                    <input type="checkbox" id="JS" checked>
-                    <label for="JS">JS</label>
-                    <input type="checkbox" id="PHP" checked>
-                    <label for="PHP">PHP</label>
-                    <input type="checkbox" id="GML" checked>
-                    <label for="GML">Game Maker Language</label>
-                    <input type="checkbox" id="MA" checked>
-                    <label for="MA">Méthodes Agiles</label>
+                    <input type="checkbox" id="pJava" checked onclick="pastProjectsSkillsUpdate(this)">
+                    <label for="pJava">Java</label>
+                    <input type="checkbox" id="pHTML-CSS" checked onclick="pastProjectsSkillsUpdate(this)">
+                    <label for="pHTML-CSS">HTML-CSS</label>
+                    <input type="checkbox" id="pGit" checked onclick="pastProjectsSkillsUpdate(this)">
+                    <label for="pGit">Git</label>
+                    <input type="checkbox" id="pSQL" checked onclick="pastProjectsSkillsUpdate(this)">
+                    <label for="pSQL">SQL</label>
+                    <input type="checkbox" id="pJS" checked onclick="pastProjectsSkillsUpdate(this)">
+                    <label for="pJS">JS</label>
+                    <input type="checkbox" id="pPHP" checked onclick="pastProjectsSkillsUpdate(this)">
+                    <label for="pPHP">PHP</label>
+                    <input type="checkbox" id="pGML" checked onclick="pastProjectsSkillsUpdate(this)">
+                    <label for="pGML">Game Maker Language</label>
+                    <input type="checkbox" id="pMA" checked onclick="pastProjectsSkillsUpdate(this)">
+                    <label for="pMA">Méthodes Agiles</label>
+                    <input type="checkbox" id="pAutre" checked onclick="pastProjectsSkillsUpdate(this)">
+                    <label for="pAutre">Hors catégories</label>
                     <!--<input type="checkbox" id="">
                     <label for=""></label>-->
                 </fieldset>
+                <input type="reset" value="Reset"/>
             </form>
 
-            <div class="projectsContainer">
+            <div class="projectsContainer pPast">
+                <div class="hidden" hidden="hidden">
+                    <p>Aucune correspondance</p>
+                </div>
+
+                <div class="projectContainer pScolaire pAutre">
+                    <h4>Passage certification RGPD</h4>
+
+                    <p>
+                        [PROJET SCOLAIRE / Décembre - Janvier 2024] Dans le cadre d'une démarche de découverte du droit,
+                        nous devons passer 4 des 5 modules de certification RGPD proposés par la CNIL. Je donne donc
+                        accès aux cetifications délivrées lors des modules.
+                    </p>
+
+                    <div>
+                        <a class="specialLink" href="ressources/projectsExampleContainer/RGPD/mod1.pdf" target="_blank">Module
+                            1</a>
+                        <a class="specialLink" href="ressources/projectsExampleContainer/RGPD/mod2.pdf" target="_blank">Module
+                            2</a>
+                        <a class="specialLink" href="ressources/projectsExampleContainer/RGPD/mod3.pdf" target="_blank">Module
+                            3</a>
+                    </div>
+                </div>
+
                 <div class="projectContainer pScolaire pHTML-CSS pJS">
                     <h4>Ce site web</h4>
 
@@ -148,9 +174,14 @@
                         pouvoir montrer mes capacités, et aussi me créer une base améliorable avec mes progrès pour le
                         futur.
                     </p>
+
+                    <div>
+                        <a class="specialLink" href="https://github.com/Nyx-go/nyx-go.github.io" target="_blank">Le
+                            dépot avec le code du site</a>
+                    </div>
                 </div>
 
-                <div class="projectContainer pExtrascolaire pGML pGIT">
+                <div class="projectContainer pExtrascolaire pGML pGit">
                     <h4>Code Game Jam 2023</h4>
 
                     <p class="pCompetence">Compétences: GML , GIT</p>
@@ -164,12 +195,16 @@
                         avons pu produire un produit certes peu évolué, mais dont nous sommes fier·e·s.
                     </p>
 
-                    <a class="specialLink" href="https://github.com/Nyx-go/AEB" target="_blank">Lien du code</a>
-                    <a class="specialLink" href="ressources/projectsExampleContainer/AEB.exe" download>Télécharger le
-                        jeu</a>
+                    <div>
+                        <a class="specialLink" href="https://github.com/Nyx-go/AEB" target="_blank">Lien du code</a>
+                        <a class="specialLink" href="ressources/projectsExampleContainer/AEB.exe" download>Télécharger
+                            le
+                            jeu</a>
+                    </div>
+
                 </div>
 
-                <div class="projectContainer pScolaire pJAVA pGIT">
+                <div class="projectContainer pScolaire pJava pGit">
                     <h4>SAE Scrabble</h4>
 
                     <p class="pCompetence">Compétences: Java , GIT</p>
@@ -180,9 +215,13 @@
                         mettre en application les premières compérences de code acquises durant le semestre.
                     </p>
 
-                    <a class="specialLink" href="https://github.com/Nyx-go/saeScrabble" target="_blank">Lien du code</a>
-                    <a class="specialLink" href="ressources/projectsExampleContainer/scrabble.pdf" target="_blank">Afficher
-                        les consignes</a>
+                    <div>
+                        <a class="specialLink" href="https://github.com/Nyx-go/saeScrabble" target="_blank">Lien du
+                            code</a>
+                        <a class="specialLink" href="ressources/projectsExampleContainer/scrabble.pdf" target="_blank">Afficher
+                            les consignes</a>
+                    </div>
+
                 </div>
             </div>
         </div>

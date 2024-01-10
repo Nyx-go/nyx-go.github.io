@@ -91,7 +91,7 @@ h3 {
 }
 
 article div {
-    margin: 50px;
+    margin: 20px;
 }
 
 .cv {
@@ -134,18 +134,27 @@ article div {
     font-size: 16px;
     line-height: 110%;
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 
-.projectContainer {
+.projectsContainer > div.projectContainer {
     width: 300px;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     text-align: center;
     background-color: #2A1B3D;
     padding: 20px;
     border-radius: 25px;
     color: lightgray;
-    justify-content: space-evenly;
+}
+
+.projectContainer>div {
+    display: flex;
+    flex-direction: column;
 }
 
 form {
