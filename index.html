@@ -29,7 +29,10 @@
             <a href="#cv">CV</a>
         </div>
         <div>
-            <a href="index.html">Projets passés</a>
+            <a href="#projetsPassés">Projets passés</a>
+        </div>
+        <div>
+            <a href="#projetsFuturs">Projets futurs</a>
         </div>
     </nav>
     <article>
@@ -79,7 +82,7 @@
             <div class="cv-container">
                 <div class="cv">
                     <img src="ressources/img/CV-Nyx.png" alt="CV de Nyx GONZALVEZ">
-                    <a class="download" href="ressources/pdf/cv-nyx.pdf" download>Télécharger en pdf</a>
+                    <a class="specialLink" href="ressources/pdf/cv-nyx.pdf" download>Télécharger en pdf</a>
                 </div>
 
                 <div class="cv-aside">
@@ -93,6 +96,129 @@
                                                                               alt="github"></a>
                 </div>
             </div>
+        </div>
+
+        <div id="projetsPassés">
+            <h3>Projets passés</h3>
+
+            <form>
+                <fieldset>
+                    <label for="type">Type de projets</label>
+                    <select id="type">
+                        <option value="Tous" selected>Tous</option>
+                        <option value="Scolaires">Scolaires</option>
+                        <option value="Extrascolaires">Extra-scolaires</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Compétences</legend>
+                    <input type="checkbox" id="Java" checked>
+                    <label for="Java">Java</label>
+                    <input type="checkbox" id="HTML-CSS" checked>
+                    <label for="HTML-CSS">HTML-CSS</label>
+                    <input type="checkbox" id="Git" checked>
+                    <label for="Git">Git</label>
+                    <input type="checkbox" id="SQL" checked>
+                    <label for="SQL">SQL</label>
+                    <input type="checkbox" id="JS" checked>
+                    <label for="JS">JS</label>
+                    <input type="checkbox" id="PHP" checked>
+                    <label for="PHP">PHP</label>
+                    <input type="checkbox" id="GML" checked>
+                    <label for="GML">Game Maker Language</label>
+                    <input type="checkbox" id="MA" checked>
+                    <label for="MA">Méthodes Agiles</label>
+                    <!--<input type="checkbox" id="">
+                    <label for=""></label>-->
+                </fieldset>
+            </form>
+
+            <div class="projectsContainer">
+                <div class="projectContainer pScolaire pHTML-CSS pJS">
+                    <h4>Ce site web</h4>
+
+                    <p class="pCompetence">Compétences: HTML/CSS , JS</p>
+
+                    <p>
+                        [PROJET SCOLAIRE / Janvier 2024] Il nous a été demandé dans le cadre du cours de communication
+                        de
+                        réaliser un site web portfolio sur n'importe quel support (en utilisant notre propre code ou des
+                        sites tiers aidant à la création de sites. J'ai donc décidé de réaliser moi même mon site, pour
+                        pouvoir montrer mes capacités, et aussi me créer une base améliorable avec mes progrès pour le
+                        futur.
+                    </p>
+                </div>
+
+                <div class="projectContainer pExtrascolaire pGML pGIT">
+                    <h4>Code Game Jam 2023</h4>
+
+                    <p class="pCompetence">Compétences: GML , GIT</p>
+
+                    <p>
+                        [PROJET EXTRASCOLAIRE / Janvier 2023] En plus des cours, Antoine Chollet organise chaque année à
+                        l'IUT de montpelier un concours de création de jeux vidéos en équipe. J'ai pris pars à cette
+                        expérience l'année dernière et ait pu produire mon premier jeu vidéo en autonomie avec mon
+                        équipe. Il m'a été donné d'apprendre rapidement un nouveau moteur (Game Maker) ainsi qu'un
+                        langage entier en un temps très court. Malgré nos peu de connaissances et nos difficultés, nous
+                        avons pu produire un produit certes peu évolué, mais dont nous sommes fier·e·s.
+                    </p>
+
+                    <a class="specialLink" href="https://github.com/Nyx-go/AEB" target="_blank">Lien du code</a>
+                    <a class="specialLink" href="ressources/projectsExampleContainer/AEB.exe" download>Télécharger le
+                        jeu</a>
+                </div>
+
+                <div class="projectContainer pScolaire pJAVA pGIT">
+                    <h4>SAE Scrabble</h4>
+
+                    <p class="pCompetence">Compétences: Java , GIT</p>
+
+                    <p>
+                        [PROJETS SCOLAIRES / Janvier 2022] Il nous a été demandé en janvier 2022 de produire par
+                        groupe de 2 selon des consignes de produire notre premier "jeu" en java. Le but était de
+                        mettre en application les premières compérences de code acquises durant le semestre.
+                    </p>
+
+                    <a class="specialLink" href="https://github.com/Nyx-go/saeScrabble" target="_blank">Lien du code</a>
+                    <a class="specialLink" href="ressources/projectsExampleContainer/scrabble.pdf" target="_blank">Afficher
+                        les consignes</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="projetsFuturs">
+            <h3>Projets futurs</h3>
+
+            <div class="projectsContainer">
+                <div class="projectContainer">
+                    <h4>Ce site web</h4>
+
+                    <p class="pCompetence">Compétences: HTML/CSS , JS , PHP</p>
+
+                    <p>
+                        [PROJET EXTRASCOLAIRE] Je souhaite par l'avenir faire une refonte de ce site, non seulement pour
+                        mettre en place mes connaissances supplémentaires, mais aussi l'etoffer en y ajoutant des
+                        données, des projets importants. J'aimerais aussi utiliser ce site pour expérimenter et
+                        développer mes compétences.
+                    </p>
+                </div>
+
+                <div class="projectContainer">
+                    <h4>CGJ</h4>
+
+                    <p class="pCompetence">Compétences: Méthodes agiles , GIT , ?</p>
+
+                    <p>
+                        [PROJET EXTRASCOLAIRE / Janvier 2024] J'ai pu monter une équipe pour reparticiper au concours
+                        organisé par Antoine Chollet. Nous sommes impatient·e·s de tenter de produire un nouveau jeu.
+                        Nous n'avons pas encore décidé si nous le ferons dans le moteur unity ou GODOT, mais nous
+                        devrons dans tous les cas développer de nouvelles compétences que nous n'avons jamais eu
+                        l'occasion de travailler.
+                    </p>
+                </div>
+            </div>
+
 
         </div>
     </article>

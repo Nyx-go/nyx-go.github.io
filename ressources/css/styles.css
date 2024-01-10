@@ -121,11 +121,33 @@ article div {
     margin: 4px;
 }
 
-.download {
+.specialLink {
     font-size: 60%;
     background-color: #44318D;
     color: white;
     border-radius: 25px;
     padding: 5px;
     margin: 4px;
+}
+
+.projectsContainer {
+    font-size: 16px;
+    line-height: 110%;
+    display: flex;
+}
+
+.projectContainer {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #2A1B3D;
+    padding: 20px;
+    border-radius: 25px;
+    color: lightgray;
+    justify-content: space-evenly;
+}
+
+form {
+    font-size: 16px;
 }
