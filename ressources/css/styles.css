@@ -160,3 +160,49 @@ article div {
 form {
     font-size: 16px;
 }
+
+#menuBurgerIcon {
+    width: 50px;
+    margin: 10px;
+}
+
+#navSmall {
+    display: none;
+}
+
+@media (max-width: 1060px) {
+    #navNonSmall {
+        display: none;
+    }
+
+    #navSmall {
+        display: flex;
+        flex-direction: row-reverse;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+    }
+
+    #navSmall a {
+        display: none;
+        border: solid #2A1B3D;
+        padding: 5px;
+        color: white;
+        background-color: #44318D;
+    }
+
+    #navSmall:hover a {
+        display: flex;
+    }
+
+    #menuBurgerIcon {
+        margin-bottom: 50px;
+    }
+}

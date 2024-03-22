@@ -2,7 +2,6 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="ressources/css/styles.css">
     <title>Nyx Portfolio</title>
 </head>
@@ -19,22 +18,34 @@
 </header>
 <main>
     <nav id="navbar">
-        <div>
-            <a class="active" href="#hautDePage">Accueil</a>
-        </div>
-        <div>
-            <a href="#futur">Futur</a>
-        </div>
-        <div>
-            <a href="#cv">CV</a>
-        </div>
-        <div>
-            <a href="#projetsPassés">Projets passés</a>
-        </div>
-        <div>
-            <a href="#projetsFuturs">Projets futurs</a>
+        <div id="navNonSmall">
+            <div>
+                <a class="active" href="#hautDePage">Accueil</a>
+            </div>
+            <div>
+                <a href="#futur">Futur</a>
+            </div>
+            <div>
+                <a href="#cv">CV</a>
+            </div>
+            <div>
+                <a href="#projetsPasses">Projets passés</a>
+            </div>
+            <div>
+                <a href="#projetsFuturs">Projets futurs</a>
+            </div>
         </div>
     </nav>
+    <div id="navSmall">
+        <img id="menuBurgerIcon" src="ressources/img/Design_plat_Menu.svg" alt="menuBurger">
+        <div class="burger">
+            <a class="active" href="#hautDePage">Accueil</a>
+            <a href="#futur">Futur</a>
+            <a href="#cv">CV</a>
+            <a href="#projetsPasses">Projets passés</a>
+            <a href="#projetsFuturs">Projets futurs</a>
+        </div>
+    </div>
     <article>
         <div>
             <h3>A propos de moi</h3>
@@ -45,6 +56,16 @@
                 m'aiderait à atteindre cet objectif et à développer des compétences supplémentaires à celles acquises en
                 cours. Ayant toujours été passionné·e par l'informatique, je suis motivée à en apprendre toujours plus
                 et cherche l'environnement qui me permettra de déployer pleinement mes capacités.
+            </p>
+
+            <p>
+                De nature très curieuse, j'aime creuser mes intérêts et m'instruire au-delà de ce que propose
+                l'éducation de l'IUT, faisant régulièrement mes propres recherches et expérimentations afin de
+                retranscrire mes idées à la perfection dans mon travail. J'accorde énormément d'importance à la
+                fonctionnabilité et n'hésite pas à passer le temps qu'il faut sur une tâche afin d'obtenir un résultat
+                sans approximation. Je suis sensible aux autres et à l'écoute, et bien que réservé.e, ma présence dans
+                un groupe de travail se fait resentir au travers de ma fiabilité et de ma capacité à m'adapter aux
+                personnalités qui m'entourent.
             </p>
 
             <p>
@@ -98,7 +119,7 @@
             </div>
         </div>
 
-        <div id="projetsPassés">
+        <div id="projetsPasses">
             <h3>Projets passés</h3>
 
             <form>
@@ -109,6 +130,7 @@
                         <option value="pScolaire">Scolaires</option>
                         <option value="pExtrascolaire">Extra-scolaires</option>
                     </select>
+                    <input type="reset" value="Reset"/>
                 </fieldset>
 
                 <fieldset>
@@ -134,12 +156,26 @@
                     <!--<input type="checkbox" id="">
                     <label for=""></label>-->
                 </fieldset>
-                <input type="reset" value="Reset"/>
             </form>
 
             <div class="projectsContainer pPast">
                 <div class="hidden" hidden="hidden">
                     <p>Aucune correspondance</p>
+                </div>
+
+                <div class="projectContainer pScolaire pHTML-CSS pGit pSQL pJS pPHP pMA">
+                    <h4>Site Web Gestion de stages et alternance</h4>
+
+                    <p>
+                        [PROJET SCOLAIRE / Novembre 2023 - Janvier 2024] Dans le cadre des SAE du BUT informatique de
+                        l'iut de Montpellier, il nous a été donné de réaliser un site web de gestion des stages et
+                        alternances de notre fillière, dans le but d'apporter une solution aux problèmes rencontrés face
+                        aux outils fournis actuellement par l'administration.
+                    </p>
+
+                    <div>
+                        <a class="specialLink" href="">En savoir plus</a>
+                    </div>
                 </div>
 
                 <div class="projectContainer pScolaire pAutre">
@@ -210,7 +246,7 @@
                     <p class="pCompetence">Compétences: Java , GIT</p>
 
                     <p>
-                        [PROJETS SCOLAIRES / Janvier 2022] Il nous a été demandé en janvier 2022 de produire par
+                        [PROJET SCOLAIRE / Janvier 2022] Il nous a été demandé en janvier 2022 de produire par
                         groupe de 2 selon des consignes de produire notre premier "jeu" en java. Le but était de
                         mettre en application les premières compérences de code acquises durant le semestre.
                     </p>
