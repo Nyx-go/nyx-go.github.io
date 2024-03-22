@@ -170,6 +170,12 @@ form {
     display: none;
 }
 
+.centerLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width: 1060px) {
     #navNonSmall {
         display: none;
